@@ -1,0 +1,26 @@
+bat : cat(1) clone with syntax highlighting and git integration
+curl : command line tool for transferring data with URL syntax
+eza : Modern ls replacement with colors, tree view
+ffmpeg : Audio/video processing
+jq : command line json processor
+git : duh
+glab : gitlab cli
+gh : github cli
+grep : GNU grep, egrep and fgrep
+gzip : GNU compression utilities
+htop : better top
+libssl-dev: SSL library used by Python, pip, etc.
+mpv : video player based on MPlayer/mplayer2
+pass : lightweight directory-based password manager
+pre-commit : Git pre-commit hook framework
+screen : Serial console tool
+tree : Displays directory trees in a terminal
+zsh : prompt replacement
+[custom] oh-my-zsh : customization for zsh : sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+[custom] starship : customization for any shell : curl -sS https://starship.rs/install.sh | sh
+[custom] pyenv : python env management : curl -fsSL https://pyenv.run | bash
+[custom] uv : Ultra-fast Python package manager : curl -LsSf https://astral.sh/uv/install.sh | sh
+[custom] poetry : Python Package manager : curl -sSL https://install.python-poetry.org | python3 -
+[custom-script] sublime-text : Text editor with APT repo : packages/custom/sublime-text.sh
+[custom-script] docker : Docker : packages/custom/docker.sh
+[custom-script] google-chrome-stable : The Google Chrome web browser : packages/custom/google-chrome-stable.sh
