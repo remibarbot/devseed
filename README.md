@@ -9,8 +9,8 @@ To simulate a clean Ubuntu workstation:
 
 ```bash
 bash tools/multipass-setup.sh
-multipass launch --name devtest
-multipass shell devtest
+multipass launch --name testbox
+multipass shell testbox
 ```
 
 Then inside the VM:
@@ -20,7 +20,14 @@ Then inside the VM:
 sudo apt update && sudo apt install -y curl git
 
 # Clone and run the setup project
-git clone https://github.com/yourusername/dev-env.git
-cd dev-env/packages
+git clone https://github.com/remibarbot/devseed.git
+cd devseed/packages
 bash install.sh
+```
+
+To clean the VM:
+```bash
+multipass stop testbox
+multipass delete testbox
+multipass purge  # delete all data
 ```
