@@ -1,9 +1,28 @@
 # devseed
-A minimal, portable setup kit for quickly bootstrapping my development environment across machines. Includes shell aliases, IDE configs, essential packages, and tooling to recreate my daily workflow.
+A minimal, portable setup kit for quickly bootstrapping my development environment across machines. Includes essential packages,IDE configs, Terminal configuration and tooling to recreate my daily workflow.
+
+## Usage
+Launch the `boostrap.sh` script.
+
+## Content
+
+### packages
+APT installable packages, and some trickier packages with custom install.
+
+### fonts
+Install script for a Nerd Font, required for proper terminal display.
+
+### terminal
+My configuration for the Wezterm terminal.
+
+### tools
+Install script for multipass
+
+### zsh
+My configuration for zsh and starship.
 
 
-
-# Testing with Multipass
+## Testing with Multipass
 
 To simulate a clean Ubuntu workstation:
 
