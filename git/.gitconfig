@@ -1,0 +1,55 @@
+[user]
+    name = Remi Barbot
+    email = your.email@example.com
+    signingkey = # (optional) your GPG key
+
+[color]
+    ui = auto
+
+[core]
+    editor = micro                      # Use micro as the default text editor
+    pager = less -F -X                  # Show full output without paging if short
+    excludesfile = ~/.gitignore_global  # Global ignore file
+    autocrlf = input                    # Convert CRLF to LF on commit (safe on Linux)
+
+[alias]
+    st = status -sb                     # Compact status view with branch
+    co = checkout                       # Short for git checkout
+    ada = add -A                        # Stage all changes
+    ci = commit                         # Short for git commit
+    br = branch                         # Short for git branch
+    lg = log --oneline --graph --decorate  # Short, pretty history view
+    lga = log --graph --all --decorate --oneline  # Like lg, but across all branches
+    hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short # Shows commits as: hash, date, subject, branch info, author
+    last = log -1 HEAD                  # Show the last commit
+    amend = commit --amend --no-edit   # Amend last commit without editing message
+    unstage = reset HEAD --            # Unstage a file (keep working copy)
+    undo = reset --soft HEAD~1         # Undo last commit, keep changes staged
+    pfl = push --force-with-lease      # Short for git push force with lease (safer than push force)
+
+[push]
+    default = simple                   # Push only the current branch to the remote of the same name
+
+[merge]
+    conflictstyle = diff3              # Show base version in merge conflicts
+
+[diff]
+    tool = micro                       # Just a placeholder; use `git difftool` integration if needed
+    colorMoved = zebra                 # Color moved lines for better visual diff
+
+[rerere]
+    enabled = true                     # Remember conflict resolutions (great for rebases)
+
+[status]
+    showUntrackedFiles = all           # Show all untracked files in `git status`
+
+[commit]
+    gpgsign = false                    # Set to true if you want to sign commits
+    template = ~/.gitmessage.txt       # Use commit message template
+
+[log]
+    abbrevCommit = true                # Use short commit hashes
+    date = iso                         # Use ISO 8601 format for dates
+
+[init]
+    defaultBranch = main               # Set default branch to 'main'

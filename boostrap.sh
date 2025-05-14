@@ -14,25 +14,29 @@ PROJECT_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 echo "🛠️  Bootstrapping full dev environment..."
 
-# Step 1: Install APT packages
+# Install APT packages
 echo "📦 Installing APT packages..."
 bash "$PROJECT_ROOT/packages/install.sh"
 
-# Step 2: Install Nerd Font
+# Install Nerd Font
 echo "🎨 Installing Nerd Font..."
 bash "$PROJECT_ROOT/fonts/install_nerd_font.sh"
 
-# Step 3: Install Zsh + Starship + Plugins
+# Install Zsh + Starship + Plugins
 echo "🐚 Installing Zsh, Oh My Zsh, Starship, and plugins..."
 bash "$PROJECT_ROOT/zsh/install_zsh_stack.sh"
 
-# Step 4: Set up WezTerm
+# Set up WezTerm
 echo "🖥️ Setting up terminal config (WezTerm)..."
 bash "$PROJECT_ROOT/terminal/install_wezterm.sh"
 
 # Set up Multipass
 echo "Setting up Multipass..."
 bash "$PROJECTDIR/tools/multipass-setup.sh"
+
+# Set up Git
+echo "Setting up Git ..."
+bash "$PROJECTDIR/git/apply_config.sh"
 
 echo "✅ All done! Please restart your terminal."
 
