@@ -21,6 +21,9 @@ Install script for multipass
 ### zsh
 My configuration for zsh and starship.
 
+### git
+A global git configuration
+
 
 ## Testing with Multipass
 
