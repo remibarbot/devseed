@@ -1,0 +1,11 @@
+# Summary (50 characters max)
+
+# Longer description (wrap at 72 characters)
+#
+# - Why the change was made
+# - What parts of the code are affected
+# - Any limitations, side effects, or context
+#
+# Fixes: #123
+# Co-authored-by: teammate <email@example.com>
+# BREAKING CHANGE: briefly explain
