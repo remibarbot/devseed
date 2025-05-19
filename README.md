@@ -1,5 +1,5 @@
 # devseed
-A minimal, portable setup kit for quickly bootstrapping my development environment across machines. Includes essential packages,IDE configs, Terminal configuration and tooling to recreate my daily workflow.
+A minimal, portable setup kit for quickly bootstrapping my development environment across machines. Includes essential packages, Terminal configuration and tooling to recreate my daily workflow.
 
 ## Usage
 Launch the `boostrap.sh` script.
