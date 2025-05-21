@@ -105,6 +105,7 @@ source $ZSH/oh-my-zsh.sh
 alias cat=bat
 alias prea='pre-commit run --all-files'
 alias ll='eza -alh --git --icons --time-style=long-iso --group-directories-first --header'
+alias gpou='git push -u origin $(git rev-parse --abbrev-ref HEAD)'
 
 # Use Starship for prompt
 eval "$(starship init zsh)"
@@ -119,3 +120,24 @@ eval "$(starship init zsh)"
 
 # Starship config path
 export STARSHIP_CONFIG="$HOME/.config/starship.toml"
+
+glab_mr() {
+    # Get current branch name
+    local branch
+    branch=$(git rev-parse --abbrev-ref HEAD)
+    
+    # Prompt for title and description
+    read "title?Merge request title: "
+    read "description?Merge request description: "
+
+    # Run glab command
+    glab mr create \
+        --source-branch "$branch" \
+        --target-branch main \
+        --title "$title" \
+        --description "$description" \
+        --assignee @me \
+        --remove-source-branch \
+        --web=false \
+        --draft
+}
