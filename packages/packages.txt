@@ -9,10 +9,14 @@ gh : github cli
 grep : GNU grep, egrep and fgrep
 gzip : GNU compression utilities
 htop : better top
+lazygit: simple terminal UI for git commands
 libssl-dev: SSL library used by Python, pip, etc.
 mpv : video player based on MPlayer/mplayer2
+make : generation of executable
 pass : lightweight directory-based password manager
+python3-venv : python with ensure pip
 pre-commit : Git pre-commit hook framework
+ripgrep : recursive regex search
 screen : Serial console tool
 tree : Displays directory trees in a terminal
 unzip : unpacking
@@ -20,10 +24,13 @@ zsh : prompt replacement
 [custom] oh-my-zsh : customization for zsh : sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 [custom] starship : customization for any shell : curl -sS https://starship.rs/install.sh | sh
 [custom] pyenv : python env management : curl -fsSL https://pyenv.run | bash
+[custom] nvm : version manager for node js : curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash
 [custom] uv : Ultra-fast Python package manager : curl -LsSf https://astral.sh/uv/install.sh | sh
 [custom] poetry : Python Package manager : curl -sSL https://install.python-poetry.org | python3 -
 [custom] micro : Terminal-based modern text editor : curl https://getmic.ro | tar xvz --no-same-owner && sudo mv micro /usr/local/bin/
+[custom] rustup : Rust installation with cargo : curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 [custom-script] sublime-text : Text editor with APT repo : packages/custom/sublime-text.sh
 [custom-script] docker : Docker : packages/custom/docker.sh
 [custom-script] google-chrome-stable : The Google Chrome web browser : packages/custom/google-chrome-stable.sh
 [custom-script] wezterm : WezTerm is a powerful cross-platform terminal emulator and multiplexer implemented in Rust : packages/custom/wezterm.sh
+[custom-script] nvim : NeoVim : packages/custom/nvim.sh

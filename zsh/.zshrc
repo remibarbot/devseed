@@ -121,6 +121,8 @@ eval "$(starship init zsh)"
 # Starship config path
 export STARSHIP_CONFIG="$HOME/.config/starship.toml"
 
+export PATH="$PATH:/opt/nvim-linux-x86_64/bin"
+
 glab_mr() {
     # Get current branch name
     local branch
